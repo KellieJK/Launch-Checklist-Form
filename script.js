@@ -48,22 +48,22 @@ window.addEventListener("load", function() {
            pilotReady.innerHTML = `Pilot ${pilot} Ready`;
            copilotReady.innerHTML = `Pilot ${copilot} Ready`;
           if (fuelLevel < 10000 && cargo <= 10000) {
-            fuelStatus.innerHTML = "Not enough fuel for the journey!"; 
-            launchStatus.innerHTML = "Shuttle not ready for launch";
+            fuelStatus.innerHTML = `Not enough fuel for the journey!`; 
+            launchStatus.innerHTML = `Shuttle not ready for launch`;
             launchStatus.style.color = 'red';
          } else if (fuelLevel >= 10000 && cargo > 10000) {
-            cargoStatus.innerHTML = "Cargo Mass is too large!"; 
-            launchStatus.innerHTML = "Shuttle not ready for launch";
+            cargoStatus.innerHTML = `Cargo Mass is too large!`; 
+            launchStatus.innerHTML = `Shuttle not ready for launch`;
             launchStatus.style.color = 'red';
            } else if (fuelLevel < 10000 && cargo > 10000) {
-              fuelStatus.innerHTML = "Not enough fuel for the journey!"; 
-              cargoStatus.innerHTML = "Cargo Mass is too large!"; 
-              launchStatus.innerHTML = "Shuttle not ready for launch";
+              fuelStatus.innerHTML = `Not enough fuel for the journey!`; 
+              cargoStatus.innerHTML = `Cargo Mass is too large!`; 
+              launchStatus.innerHTML = `Shuttle not ready for launch`;
               launchStatus.style.color = 'red';
           } else {
-          launchStatus.innerHTML = "Shuttle ready for launch!";
+          launchStatus.innerHTML = `Shuttle ready for launch!`;
           launchStatus.style.color = 'green';
-          faultyItems.style.visibility = "hidden";
+          faultyItems.style.visibility = 'hidden';
          }
   
    };
